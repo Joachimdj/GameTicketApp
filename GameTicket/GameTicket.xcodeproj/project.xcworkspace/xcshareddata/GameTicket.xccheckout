@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75D9C7DE-F597-4228-AE81-266B69A40750</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6774E4B891415A530AD4D0C3E52409E2828ADAC5</key>
+		<string>https://github.com/Joachimdj/GameTicketApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameTicket/GameTicket.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6774E4B891415A530AD4D0C3E52409E2828ADAC5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Joachimdj/GameTicketApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6774E4B891415A530AD4D0C3E52409E2828ADAC5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6774E4B891415A530AD4D0C3E52409E2828ADAC5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameTicketApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
