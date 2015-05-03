@@ -9,11 +9,26 @@
 /* Begin PBXBuildFile section */
 		88A818DB1AF66A410047DDDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A818DA1AF66A410047DDDD /* AppDelegate.swift */; };
 		88A818DE1AF66A410047DDDD /* GameTicket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88A818DC1AF66A410047DDDD /* GameTicket.xcdatamodeld */; };
-		88A818E01AF66A410047DDDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A818DF1AF66A410047DDDD /* ViewController.swift */; };
 		88A818E31AF66A410047DDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A818E11AF66A410047DDDD /* Main.storyboard */; };
 		88A818E51AF66A410047DDDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A818E41AF66A410047DDDD /* Images.xcassets */; };
 		88A818E81AF66A410047DDDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A818E61AF66A410047DDDD /* LaunchScreen.xib */; };
 		88A818F41AF66A410047DDDD /* GameTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A818F31AF66A410047DDDD /* GameTicketTests.swift */; };
+		88A8195B1AF6725A0047DDDD /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A8195A1AF672560047DDDD /* SideMenu.framework */; };
+		88A8195D1AF6725E0047DDDD /* SideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88A8195A1AF672560047DDDD /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88A819721AF67AB40047DDDD /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A819711AF67AB40047DDDD /* Events.swift */; };
+		88A8199D1AF67CC20047DDDD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A819961AF67CBC0047DDDD /* Alamofire.framework */; };
+		88A8199F1AF67CF20047DDDD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */; };
+		88A819C01AF681490047DDDD /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A819BB1AF6813D0047DDDD /* Haneke.framework */; };
+		88A819C11AF681490047DDDD /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88A819BB1AF6813D0047DDDD /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88A819C91AF681840047DDDD /* PullToRefreshOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A819C51AF681840047DDDD /* PullToRefreshOption.swift */; };
+		88A819CA1AF681840047DDDD /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A819C61AF681840047DDDD /* PullToRefreshView.swift */; };
+		88A819CD1AF681B30047DDDD /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A819CC1AF681B30047DDDD /* EventCell.swift */; };
+		88D073BE1AF68721009E11A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A819961AF67CBC0047DDDD /* Alamofire.framework */; };
+		88D073BF1AF68721009E11A6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88A819961AF67CBC0047DDDD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88D073C51AF68DC9009E11A6 /* eventPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D073C41AF68DC9009E11A6 /* eventPage.swift */; };
+		88D073C71AF6A1A3009E11A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D073C61AF6A1A3009E11A6 /* LoadingView.swift */; };
+		88D073C91AF6AD55009E11A6 /* content_films.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D073C81AF6AD55009E11A6 /* content_films.png */; };
+		88D073CB1AF6AEFD009E11A6 /* strandvagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D073CA1AF6AEFD009E11A6 /* strandvagen.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +39,124 @@
 			remoteGlobalIDString = 88A818D41AF66A410047DDDD;
 			remoteInfo = GameTicket;
 		};
+		88A819591AF672560047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819551AF672560047DDDD /* SideMenu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50B42F001A6A879C00B05352;
+			remoteInfo = SideMenu;
+		};
+		88A8195E1AF6725F0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819551AF672560047DDDD /* SideMenu.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B42EFF1A6A879C00B05352;
+			remoteInfo = SideMenu;
+		};
+		88A819951AF67CBC0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		88A819971AF67CBC0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		88A819991AF67CBC0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		88A8199B1AF67CBC0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		88A819BA1AF6813D0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		88A819BC1AF6813D0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		88A819BE1AF6813D0047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		88A819C21AF681490047DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		88D073C01AF68721009E11A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88A819601AF6725F0047DDDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				88A819C11AF681490047DDDD /* Haneke.framework in Embed Frameworks */,
+				88D073BF1AF68721009E11A6 /* Alamofire.framework in Embed Frameworks */,
+				88A8195D1AF6725E0047DDDD /* SideMenu.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		88A818D51AF66A410047DDDD /* GameTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A818D91AF66A410047DDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A818DA1AF66A410047DDDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A818DD1AF66A410047DDDD /* GameTicket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameTicket.xcdatamodel; sourceTree = "<group>"; };
-		88A818DF1AF66A410047DDDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88A818E21AF66A410047DDDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88A818E41AF66A410047DDDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88A818E71AF66A410047DDDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88A818ED1AF66A410047DDDD /* GameTicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameTicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A818F21AF66A410047DDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A818F31AF66A410047DDDD /* GameTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTicketTests.swift; sourceTree = "<group>"; };
+		88A819551AF672560047DDDD /* SideMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SideMenu.xcodeproj; path = GameTicket/SideMenu.xcodeproj; sourceTree = "<group>"; };
+		88A819711AF67AB40047DDDD /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../../Downloads/HanekeSwift-master 2/Haneke.xcodeproj"; sourceTree = "<group>"; };
+		88A819C51AF681840047DDDD /* PullToRefreshOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshOption.swift; sourceTree = "<group>"; };
+		88A819C61AF681840047DDDD /* PullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshView.swift; sourceTree = "<group>"; };
+		88A819CC1AF681B30047DDDD /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		88D073C41AF68DC9009E11A6 /* eventPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventPage.swift; sourceTree = "<group>"; };
+		88D073C61AF6A1A3009E11A6 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		88D073C81AF6AD55009E11A6 /* content_films.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = content_films.png; path = Images.xcassets/Content/content_films.imageset/content_films.png; sourceTree = "<group>"; };
+		88D073CA1AF6AEFD009E11A6 /* strandvagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strandvagen.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +164,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A8199D1AF67CC20047DDDD /* Alamofire.framework in Frameworks */,
+				88A8195B1AF6725A0047DDDD /* SideMenu.framework in Frameworks */,
+				88A819C01AF681490047DDDD /* Haneke.framework in Frameworks */,
+				88D073BE1AF68721009E11A6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +184,9 @@
 		88A818CC1AF66A410047DDDD = {
 			isa = PBXGroup;
 			children = (
+				88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */,
+				88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */,
+				88A819551AF672560047DDDD /* SideMenu.xcodeproj */,
 				88A818D71AF66A410047DDDD /* GameTicket */,
 				88A818F01AF66A410047DDDD /* GameTicketTests */,
 				88A818D61AF66A410047DDDD /* Products */,
@@ -79,9 +205,17 @@
 		88A818D71AF66A410047DDDD /* GameTicket */ = {
 			isa = PBXGroup;
 			children = (
+				88A819C51AF681840047DDDD /* PullToRefreshOption.swift */,
+				88A819C61AF681840047DDDD /* PullToRefreshView.swift */,
+				88D073CA1AF6AEFD009E11A6 /* strandvagen.jpg */,
+				88D073C61AF6A1A3009E11A6 /* LoadingView.swift */,
+				88D073C81AF6AD55009E11A6 /* content_films.png */,
+				88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */,
+				88A819CC1AF681B30047DDDD /* EventCell.swift */,
 				88A818DA1AF66A410047DDDD /* AppDelegate.swift */,
-				88A818DF1AF66A410047DDDD /* ViewController.swift */,
 				88A818E11AF66A410047DDDD /* Main.storyboard */,
+				88A819711AF67AB40047DDDD /* Events.swift */,
+				88D073C41AF68DC9009E11A6 /* eventPage.swift */,
 				88A818E41AF66A410047DDDD /* Images.xcassets */,
 				88A818E61AF66A410047DDDD /* LaunchScreen.xib */,
 				88A818DC1AF66A410047DDDD /* GameTicket.xcdatamodeld */,
@@ -115,6 +249,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		88A819561AF672560047DDDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A8195A1AF672560047DDDD /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A8198F1AF67CBC0047DDDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A819961AF67CBC0047DDDD /* Alamofire.framework */,
+				88A819981AF67CBC0047DDDD /* Alamofire.framework */,
+				88A8199A1AF67CBC0047DDDD /* Alamofire iOS Tests.xctest */,
+				88A8199C1AF67CBC0047DDDD /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A819B51AF6813D0047DDDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A819BB1AF6813D0047DDDD /* Haneke.framework */,
+				88A819BD1AF6813D0047DDDD /* HanekeTests.xctest */,
+				88A819BF1AF6813D0047DDDD /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +288,14 @@
 				88A818D11AF66A410047DDDD /* Sources */,
 				88A818D21AF66A410047DDDD /* Frameworks */,
 				88A818D31AF66A410047DDDD /* Resources */,
+				88A819601AF6725F0047DDDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				88A8195F1AF6725F0047DDDD /* PBXTargetDependency */,
+				88A819C31AF681490047DDDD /* PBXTargetDependency */,
+				88D073C11AF68721009E11A6 /* PBXTargetDependency */,
 			);
 			name = GameTicket;
 			productName = GameTicket;
@@ -182,6 +349,20 @@
 			mainGroup = 88A818CC1AF66A410047DDDD;
 			productRefGroup = 88A818D61AF66A410047DDDD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88A8198F1AF67CBC0047DDDD /* Products */;
+					ProjectRef = 88A8198E1AF67CBC0047DDDD /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 88A819B51AF6813D0047DDDD /* Products */;
+					ProjectRef = 88A819B41AF6813D0047DDDD /* Haneke.xcodeproj */;
+				},
+				{
+					ProductGroup = 88A819561AF672560047DDDD /* Products */;
+					ProjectRef = 88A819551AF672560047DDDD /* SideMenu.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88A818D41AF66A410047DDDD /* GameTicket */,
@@ -190,12 +371,73 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		88A8195A1AF672560047DDDD /* SideMenu.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SideMenu.framework;
+			remoteRef = 88A819591AF672560047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A819961AF67CBC0047DDDD /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 88A819951AF67CBC0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A819981AF67CBC0047DDDD /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 88A819971AF67CBC0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A8199A1AF67CBC0047DDDD /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 88A819991AF67CBC0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A8199C1AF67CBC0047DDDD /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 88A8199B1AF67CBC0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A819BB1AF6813D0047DDDD /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 88A819BA1AF6813D0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A819BD1AF6813D0047DDDD /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 88A819BC1AF6813D0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88A819BF1AF6813D0047DDDD /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 88A819BE1AF6813D0047DDDD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		88A818D31AF66A410047DDDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88A818E31AF66A410047DDDD /* Main.storyboard in Resources */,
+				88D073C91AF6AD55009E11A6 /* content_films.png in Resources */,
+				88D073CB1AF6AEFD009E11A6 /* strandvagen.jpg in Resources */,
 				88A818E81AF66A410047DDDD /* LaunchScreen.xib in Resources */,
 				88A818E51AF66A410047DDDD /* Images.xcassets in Resources */,
 			);
@@ -215,8 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A818E01AF66A410047DDDD /* ViewController.swift in Sources */,
+				88A819721AF67AB40047DDDD /* Events.swift in Sources */,
+				88A819C91AF681840047DDDD /* PullToRefreshOption.swift in Sources */,
+				88D073C51AF68DC9009E11A6 /* eventPage.swift in Sources */,
+				88D073C71AF6A1A3009E11A6 /* LoadingView.swift in Sources */,
+				88A8199F1AF67CF20047DDDD /* SwiftyJSON.swift in Sources */,
 				88A818DB1AF66A410047DDDD /* AppDelegate.swift in Sources */,
+				88A819CD1AF681B30047DDDD /* EventCell.swift in Sources */,
+				88A819CA1AF681840047DDDD /* PullToRefreshView.swift in Sources */,
 				88A818DE1AF66A410047DDDD /* GameTicket.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +484,21 @@
 			isa = PBXTargetDependency;
 			target = 88A818D41AF66A410047DDDD /* GameTicket */;
 			targetProxy = 88A818EE1AF66A410047DDDD /* PBXContainerItemProxy */;
+		};
+		88A8195F1AF6725F0047DDDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			targetProxy = 88A8195E1AF6725F0047DDDD /* PBXContainerItemProxy */;
+		};
+		88A819C31AF681490047DDDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = 88A819C21AF681490047DDDD /* PBXContainerItemProxy */;
+		};
+		88D073C11AF68721009E11A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 88D073C01AF68721009E11A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +676,7 @@
 				88A818F91AF66A410047DDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A818FA1AF66A410047DDDD /* Build configuration list for PBXNativeTarget "GameTicketTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +685,7 @@
 				88A818FC1AF66A410047DDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
