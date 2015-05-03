@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <visualEffectView key="backgroundView" opaque="NO" contentMode="scaleToFill" id="FRM-YQ-AZV">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WHT-Zj-o66">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
@@ -133,7 +133,6 @@
         <!--Event Page-->
         <scene sceneID="zKf-jN-iMx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BFj-HB-NMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="eventPage" id="9JG-dR-OY1" customClass="eventPage" customModule="GameTicket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WWB-9U-SsU"/>
@@ -181,6 +180,7 @@
                         <outlet property="webview" destination="nSt-L9-bdY" id="SF0-jZ-rMO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BFj-HB-NMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693" y="-1348"/>
         </scene>
