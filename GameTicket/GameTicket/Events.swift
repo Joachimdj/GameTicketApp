@@ -6,9 +6,11 @@ import UIKit
 import Alamofire
 import Haneke
 var dataVideo: [JSON] = []
-var i = 0
+var i = 0 
+
 var selectedVideo = 0
-class Events: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class Events: UIViewController, FloatingMenuControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+ 
     var loading = LoadingView();
     @IBOutlet var collectionView: UICollectionView?
     var refreshCtrl = UIRefreshControl()
@@ -20,7 +22,7 @@ class Events: UIViewController, UICollectionViewDataSource, UICollectionViewDele
             
             
             dataVideo.removeAll()
-            Alamofire.request(.GET, "http://gameticket.dk/includes/api/public/getBlocks.php?type=3&var=block_id,name,cat,image,start_date,end_date&limit=0,3000").responseJSON { (request, response, json, error) in
+            Alamofire.request(.GET, "http://gameticket.dk/includes/api/public/getBlocks.php?type=3&var=block_id,name,cat,image,start_date,end_date&asc_desc=ASC&limit=0,200").responseJSON { (request, response, json, error) in
                 println(error)
                 if json != nil {
                     var jsonObj = JSON(json!)
@@ -45,10 +47,36 @@ class Events: UIViewController, UICollectionViewDataSource, UICollectionViewDele
         }
         
     }
+      @IBOutlet weak var floatingButton: FloatingButton!
+    
+    @IBAction func floatingButtonPressed(sender: AnyObject) {
+        let controller = FloatingMenuController(fromView: sender as! UIButton)
+        controller.delegate = self
+        
+        controller.buttonArray = [
+            FloatingButton(image: UIImage(named: "icon-add"), backgroundColor: UIColor.flatBlueColor),
+            FloatingButton(image: UIImage(named: "model-008"), backgroundColor: nil),
+            FloatingButton(image: UIImage(named: "model-007"), backgroundColor: nil)
+        ]
+        
+        controller.labelTitles = [
+            "New Contact",
+            "Heidi Hernandez",
+            "Neil Ross",
+        ]
+        
+        
+        presentViewController(controller, animated: true, completion: nil)
+        
+        
+    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+          floatingButton.setup()
+        
+        
         loading.showAtCenterPointWithSize(CGPointMake(CGRectGetWidth(self.view.bounds)/2, CGRectGetHeight(self.view.bounds)/2), size: 16.0)
         self.view.addSubview(loading)
         loading.startLoading()
@@ -86,7 +114,11 @@ class Events: UIViewController, UICollectionViewDataSource, UICollectionViewDele
        presentViewController(controller, animated: true, completion: nil)
         
     }
-    
+    func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
+    {
+        var cellSize:CGSize = CGSizeMake(self.collectionView!.frame.width, 220)
+        return cellSize
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -96,7 +128,13 @@ class Events: UIViewController, UICollectionViewDataSource, UICollectionViewDele
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    func floatingMenuController(controller: FloatingMenuController, didTapOnButton button: UIButton, atIndex index: Int) {
+        println(index)
+    }
     
+    func floatingMenuControllerDidCancel(controller: FloatingMenuController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }
 
