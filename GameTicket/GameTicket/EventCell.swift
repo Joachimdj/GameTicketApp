@@ -18,7 +18,7 @@ class EventCell: UICollectionViewCell {
        override init(frame: CGRect) {
         super.init(frame: frame)
         
-        imgCell = UIImageView(frame: CGRect(x: 0, y: 16, width: frame.size.width, height: frame.size.height*2/3))
+        imgCell = UIImageView(frame: CGRect(x: 0, y: 06, width: frame.size.width, height: frame.size.height*2/3))
         imgCell.contentMode = UIViewContentMode.ScaleAspectFit
         contentView.addSubview(imgCell)
         
