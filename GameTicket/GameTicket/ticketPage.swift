@@ -8,7 +8,7 @@
 
 import UIKit
 
-class eventPage: UIViewController {
+class ticketPage: UIViewController {
     @IBOutlet weak var webview: UIWebView!
     var myscr : UIScrollView?
     var buyButton : UIButton?
@@ -18,26 +18,17 @@ class eventPage: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var HeaderImage: UIImageView!
-  
+    
     @IBOutlet weak var navi: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var data =  dataVideo
-    
-        let image = UITextView();
-        navi.title = data[selectedVideo]["name"].string
-       
-    
+        var data =  coms
         
-        var id = data[selectedVideo]["block_id"].string;
-        println(id);
-        let url1 = NSURL (string: "http://www.gameticket.dk/block.php?id=\(id!)&app=true");
-        let requestObj = NSURLRequest(URL: url1!);
-        webview.frame = CGRectMake(0,-20,view.frame.width,view.frame.height)
-       webview.loadRequest(requestObj);
+        let image = UITextView();
+        navi.title = data[selectedticket]["ticketName"].string
         
     }
- 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -50,5 +41,5 @@ class eventPage: UIViewController {
         
     }
     
-
+    
 }

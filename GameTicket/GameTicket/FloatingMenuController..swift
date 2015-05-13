@@ -154,6 +154,9 @@ class FloatingMenuController: UIViewController {
         
         if let index = find(buttonArray, sender) {
             self.delegate?.floatingMenuController(self, didTapOnButton: sender, atIndex: index)
+              
+           
+            
         }
     }
     

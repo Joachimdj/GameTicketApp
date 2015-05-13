@@ -47,6 +47,8 @@ class ViewController: UIViewController, FloatingMenuControllerDelegate {
     
     func floatingMenuController(controller: FloatingMenuController, didTapOnButton button: UIButton, atIndex index: Int) {
         println(index)
+       
+        
     }
     
     func floatingMenuControllerDidCancel(controller: FloatingMenuController) {
