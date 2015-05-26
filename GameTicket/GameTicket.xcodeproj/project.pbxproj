@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		881BE8EF1B01800A00CD4812 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BE8EE1B01800A00CD4812 /* test.swift */; };
 		881E49251AF7FF31005E4FC0 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881E49201AF7FF2A005E4FC0 /* Haneke.framework */; };
 		881E49261AF7FF31005E4FC0 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 881E49201AF7FF2A005E4FC0 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		881E49291AF7FF31005E4FC0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881E49121AF7FF11005E4FC0 /* Alamofire.framework */; };
 		881E492A1AF7FF31005E4FC0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 881E49121AF7FF11005E4FC0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		881E492F1B017318005E4FC0 /* tickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E492E1B017318005E4FC0 /* tickets.swift */; };
 		881E49311B017914005E4FC0 /* ticketPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E49301B017914005E4FC0 /* ticketPage.swift */; };
-		8868A61F1AF6F25400E09123 /* Floating-Heads.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8868A61D1AF6F25400E09123 /* Floating-Heads.xcassets */; };
-		8868A6201AF6F25400E09123 /* Zooming-Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8868A61E1AF6F25400E09123 /* Zooming-Icons.xcassets */; };
+		88939D921B1398F800C70CEB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939D911B1398F800C70CEB /* Login.swift */; };
+		88939D951B13AC4500C70CEB /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939D941B13AC4500C70CEB /* Ticket.swift */; };
+		88939D981B13AC5900C70CEB /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939D971B13AC5900C70CEB /* Block.swift */; };
+		88939D9B1B13C3CE00C70CEB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939D9A1B13C3CE00C70CEB /* Profile.swift */; };
+		88939D9D1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88939D9C1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift */; };
 		88A818DB1AF66A410047DDDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A818DA1AF66A410047DDDD /* AppDelegate.swift */; };
 		88A818DE1AF66A410047DDDD /* GameTicket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88A818DC1AF66A410047DDDD /* GameTicket.xcdatamodeld */; };
 		88A818E31AF66A410047DDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A818E11AF66A410047DDDD /* Main.storyboard */; };
@@ -29,7 +31,6 @@
 		88A819CD1AF681B30047DDDD /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A819CC1AF681B30047DDDD /* EventCell.swift */; };
 		88D073C51AF68DC9009E11A6 /* eventPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D073C41AF68DC9009E11A6 /* eventPage.swift */; };
 		88D073C71AF6A1A3009E11A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D073C61AF6A1A3009E11A6 /* LoadingView.swift */; };
-		88F40A4A1AF6F013002AE25B /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F40A491AF6F013002AE25B /* ViewController1.swift */; };
 		88F40A4C1AF6F033002AE25B /* FloatingMenuController..swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F40A4B1AF6F033002AE25B /* FloatingMenuController..swift */; };
 		88F40A4E1AF6F049002AE25B /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F40A4D1AF6F049002AE25B /* FloatingButton.swift */; };
 		88F40A501AF6F063002AE25B /* UIColors+FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F40A4F1AF6F063002AE25B /* UIColors+FloatingMenu.swift */; };
@@ -124,13 +125,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		881BE8EE1B01800A00CD4812 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		881E490A1AF7FF10005E4FC0 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		881E49191AF7FF2A005E4FC0 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/HanekeSwift-master/Haneke.xcodeproj"; sourceTree = "<group>"; };
 		881E492E1B017318005E4FC0 /* tickets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tickets.swift; sourceTree = "<group>"; };
 		881E49301B017914005E4FC0 /* ticketPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ticketPage.swift; sourceTree = "<group>"; };
-		8868A61D1AF6F25400E09123 /* Floating-Heads.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Floating-Heads.xcassets"; sourceTree = "<group>"; };
-		8868A61E1AF6F25400E09123 /* Zooming-Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Zooming-Icons.xcassets"; sourceTree = "<group>"; };
+		88939D911B1398F800C70CEB /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		88939D941B13AC4500C70CEB /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		88939D971B13AC5900C70CEB /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		88939D9A1B13C3CE00C70CEB /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		88939D9C1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARNModalTransitonAnimator.swift; sourceTree = "<group>"; };
 		88A818D51AF66A410047DDDD /* GameTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A818D91AF66A410047DDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A818DA1AF66A410047DDDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +151,6 @@
 		88A819CC1AF681B30047DDDD /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		88D073C41AF68DC9009E11A6 /* eventPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventPage.swift; sourceTree = "<group>"; };
 		88D073C61AF6A1A3009E11A6 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		88F40A491AF6F013002AE25B /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		88F40A4B1AF6F033002AE25B /* FloatingMenuController..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuController..swift; sourceTree = "<group>"; };
 		88F40A4D1AF6F049002AE25B /* FloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		88F40A4F1AF6F063002AE25B /* UIColors+FloatingMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+FloatingMenu.swift"; sourceTree = "<group>"; };
@@ -195,6 +197,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		88939D931B13AC3100C70CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88939D941B13AC4500C70CEB /* Ticket.swift */,
+				88939D971B13AC5900C70CEB /* Block.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88939D991B13AEB800C70CEB /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				88A819C51AF681840047DDDD /* PullToRefreshOption.swift */,
+				88A819C61AF681840047DDDD /* PullToRefreshView.swift */,
+				88D073C61AF6A1A3009E11A6 /* LoadingView.swift */,
+			);
+			name = Refresh;
+			sourceTree = "<group>";
+		};
 		88A818CC1AF66A410047DDDD = {
 			isa = PBXGroup;
 			children = (
@@ -218,21 +239,20 @@
 		88A818D71AF66A410047DDDD /* GameTicket */ = {
 			isa = PBXGroup;
 			children = (
+				88A818DA1AF66A410047DDDD /* AppDelegate.swift */,
+				88939D9C1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift */,
+				88939D991B13AEB800C70CEB /* Refresh */,
+				88939D931B13AC3100C70CEB /* Models */,
 				88F40A481AF6F005002AE25B /* menu */,
-				88A819C51AF681840047DDDD /* PullToRefreshOption.swift */,
-				88A819C61AF681840047DDDD /* PullToRefreshView.swift */,
-				88D073C61AF6A1A3009E11A6 /* LoadingView.swift */,
 				88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */,
 				88A819CC1AF681B30047DDDD /* EventCell.swift */,
-				88A818DA1AF66A410047DDDD /* AppDelegate.swift */,
-				8868A61D1AF6F25400E09123 /* Floating-Heads.xcassets */,
-				8868A61E1AF6F25400E09123 /* Zooming-Icons.xcassets */,
-				88A818E11AF66A410047DDDD /* Main.storyboard */,
-				881BE8EE1B01800A00CD4812 /* test.swift */,
+				88939D911B1398F800C70CEB /* Login.swift */,
+				88939D9A1B13C3CE00C70CEB /* Profile.swift */,
 				881E492E1B017318005E4FC0 /* tickets.swift */,
 				88A819711AF67AB40047DDDD /* Events.swift */,
 				88D073C41AF68DC9009E11A6 /* eventPage.swift */,
 				881E49301B017914005E4FC0 /* ticketPage.swift */,
+				88A818E11AF66A410047DDDD /* Main.storyboard */,
 				88A818E41AF66A410047DDDD /* Images.xcassets */,
 				88A818E61AF66A410047DDDD /* LaunchScreen.xib */,
 				88A818DC1AF66A410047DDDD /* GameTicket.xcdatamodeld */,
@@ -269,7 +289,6 @@
 		88F40A481AF6F005002AE25B /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				88F40A491AF6F013002AE25B /* ViewController1.swift */,
 				88F40A4B1AF6F033002AE25B /* FloatingMenuController..swift */,
 				88F40A4D1AF6F049002AE25B /* FloatingButton.swift */,
 				88F40A4F1AF6F063002AE25B /* UIColors+FloatingMenu.swift */,
@@ -424,8 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A818E31AF66A410047DDDD /* Main.storyboard in Resources */,
-				8868A6201AF6F25400E09123 /* Zooming-Icons.xcassets in Resources */,
-				8868A61F1AF6F25400E09123 /* Floating-Heads.xcassets in Resources */,
 				88A818E81AF66A410047DDDD /* LaunchScreen.xib in Resources */,
 				88A818E51AF66A410047DDDD /* Images.xcassets in Resources */,
 			);
@@ -445,21 +462,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F40A4A1AF6F013002AE25B /* ViewController1.swift in Sources */,
+				88939D921B1398F800C70CEB /* Login.swift in Sources */,
 				88A819721AF67AB40047DDDD /* Events.swift in Sources */,
 				88A819C91AF681840047DDDD /* PullToRefreshOption.swift in Sources */,
 				88D073C51AF68DC9009E11A6 /* eventPage.swift in Sources */,
 				88D073C71AF6A1A3009E11A6 /* LoadingView.swift in Sources */,
-				881BE8EF1B01800A00CD4812 /* test.swift in Sources */,
 				88A8199F1AF67CF20047DDDD /* SwiftyJSON.swift in Sources */,
 				881E49311B017914005E4FC0 /* ticketPage.swift in Sources */,
+				88939D9B1B13C3CE00C70CEB /* Profile.swift in Sources */,
 				88A818DB1AF66A410047DDDD /* AppDelegate.swift in Sources */,
 				88F40A4C1AF6F033002AE25B /* FloatingMenuController..swift in Sources */,
 				88A819CD1AF681B30047DDDD /* EventCell.swift in Sources */,
 				88F40A501AF6F063002AE25B /* UIColors+FloatingMenu.swift in Sources */,
+				88939D951B13AC4500C70CEB /* Ticket.swift in Sources */,
 				881E492F1B017318005E4FC0 /* tickets.swift in Sources */,
 				88A819CA1AF681840047DDDD /* PullToRefreshView.swift in Sources */,
+				88939D981B13AC5900C70CEB /* Block.swift in Sources */,
 				88A818DE1AF66A410047DDDD /* GameTicket.xcdatamodeld in Sources */,
+				88939D9D1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift in Sources */,
 				88F40A4E1AF6F049002AE25B /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +625,7 @@
 				INFOPLIST_FILE = GameTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -620,6 +641,7 @@
 				INFOPLIST_FILE = GameTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

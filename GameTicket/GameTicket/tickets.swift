@@ -73,13 +73,11 @@ class tickets: UIViewController , UICollectionViewDataSource, UICollectionViewDe
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell: EventCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! EventCell
         let data =   coms[indexPath.row]
-        i++
-        println(i)
+        
         cell.lblCell.text =  data["blockName"].string
         cell.Date.text =  data["ticketName"].string
         var imageView = UIImageView(frame: CGRectMake(0, -1, cell.frame.width, cell.frame.height))
-        var  urlString = data["image"].string
-        println(urlString)
+        var  urlString = data["image"].string 
         if(urlString != ""){
             var url = NSURL(string: "http://gameticket.dk/\(urlString!)")
             imageView.hnk_setImageFromURL(url!)
@@ -89,14 +87,17 @@ class tickets: UIViewController , UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        selectedVideo = indexPath.row
+        selectedblock = indexPath.row
         let controller = storyboard?.instantiateViewControllerWithIdentifier("ticketPage") as! ticketPage
         presentViewController(controller, animated: true, completion: nil)
         
     }
     func collectionView(collectionView : UICollectionView,layout collectionViewLayout:UICollectionViewLayout,sizeForItemAtIndexPath indexPath:NSIndexPath) -> CGSize
     {
-        var cellSize:CGSize = CGSizeMake(self.collectionView!.frame.width, 220)
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        
+        var cellSize:CGSize = CGSizeMake(screenSize.width, screenSize.height/3)
+        
         return cellSize
     }
     

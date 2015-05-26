@@ -7,33 +7,30 @@
 //
 
 import UIKit
-
-class eventPage: UIViewController {
+import MessageUI
+import Social
+class eventPage: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var webview: UIWebView!
-    var myscr : UIScrollView?
-    var buyButton : UIButton?
-    var mylbl : UILabel?
-    var mytext2 : UITextView?
-    var mylbl2 : UILabel?
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var HeaderImage: UIImageView!
-  
     @IBOutlet weak var navi: UINavigationItem!
+    @IBOutlet weak var contactButton: UIBarButtonItem!
+    @IBOutlet weak var Website: UIBarButtonItem!
+     @IBOutlet weak var BuyButton: UIBarButtonItem!
+    var data =  Blocks[selectedblock]
     override func viewDidLoad() {
         super.viewDidLoad()
-        var data =  dataVideo
-    
-        let image = UITextView();
-        navi.title = data[selectedVideo]["name"].string
-       
-    
         
-        var id = data[selectedVideo]["block_id"].string;
+        if(is_searching == true){
+            data =  filteredBlocks[selectedblock]}
+        else{
+         data =  Blocks[selectedblock]}
+        navi.title = data.name
+        if(data.homepage.isEmpty){ Website.enabled = false }
+        if(data.email.isEmpty){ contactButton.enabled = false   }
+        if(data.email.isEmpty){ BuyButton.enabled = false   }
+        var id = data.id
         println(id);
-        let url1 = NSURL (string: "http://www.gameticket.dk/block.php?id=\(id!)&app=true");
+        let url1 = NSURL (string: "http://www.gameticket.dk/block.php?id=\(id)&app=true");
         let requestObj = NSURLRequest(URL: url1!);
-        webview.frame = CGRectMake(0,-20,view.frame.width,view.frame.height)
        webview.loadRequest(requestObj);
         
     }
@@ -50,5 +47,61 @@ class eventPage: UIViewController {
         
     }
     
+    
+    @IBAction func openURL(sender: AnyObject) {
+        var url : NSURL
+        url = NSURL(string: "\(data.homepage)")!
+        UIApplication.sharedApplication().openURL(url)
 
+    }
+ 
+    
+    @IBAction func SendEmail(sender: AnyObject) {
+        println(data.email)
+        if (MFMailComposeViewController.canSendMail()) {
+            
+            var toRecipents = ["\(data.email)"]
+            
+            var mc:MFMailComposeViewController = MFMailComposeViewController()
+            
+            mc.mailComposeDelegate = self
+            
+            mc.setToRecipients(toRecipents)
+            
+            self.presentViewController(mc, animated: true, completion: nil)
+            
+        }else {
+            
+            println("No email account found")
+            
+        }
+
+    }
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        
+        switch result.value {
+            
+        case MFMailComposeResultCancelled.value:
+            println("Mail Cancelled")
+        case MFMailComposeResultSaved.value:
+            println("Mail Saved")
+        case MFMailComposeResultSent.value:
+            println("Mail Sent")
+        case MFMailComposeResultFailed.value:
+            println("Mail Failed")
+        default:
+            break
+            
+        }
+        
+        self.dismissViewControllerAnimated(false, completion: nil)
+        
+    }
+ 
+    @IBAction func buyTicket(sender: AnyObject) {
+        let url1 = NSURL (string: "http://www.gameticket.dk/signup.php?id=\(data.id)&app=true");
+        let requestObj = NSURLRequest(URL: url1!); 
+        webview.loadRequest(requestObj);
+    }
+    
 }
