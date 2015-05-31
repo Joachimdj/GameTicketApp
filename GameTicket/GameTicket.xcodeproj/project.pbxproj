@@ -216,6 +216,28 @@
 			name = Refresh;
 			sourceTree = "<group>";
 		};
+		88939D9E1B14B6DE00C70CEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88939D911B1398F800C70CEB /* Login.swift */,
+				88939D9A1B13C3CE00C70CEB /* Profile.swift */,
+				881E492E1B017318005E4FC0 /* tickets.swift */,
+				88A819711AF67AB40047DDDD /* Events.swift */,
+				88D073C41AF68DC9009E11A6 /* eventPage.swift */,
+				881E49301B017914005E4FC0 /* ticketPage.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88939D9F1B14B70100C70CEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				88939D9C1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift */,
+				88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		88A818CC1AF66A410047DDDD = {
 			isa = PBXGroup;
 			children = (
@@ -239,19 +261,13 @@
 		88A818D71AF66A410047DDDD /* GameTicket */ = {
 			isa = PBXGroup;
 			children = (
-				88A818DA1AF66A410047DDDD /* AppDelegate.swift */,
-				88939D9C1B13CEC200C70CEB /* ARNModalTransitonAnimator.swift */,
+				88939D9F1B14B70100C70CEB /* Utils */,
 				88939D991B13AEB800C70CEB /* Refresh */,
 				88939D931B13AC3100C70CEB /* Models */,
 				88F40A481AF6F005002AE25B /* menu */,
-				88A8199E1AF67CF20047DDDD /* SwiftyJSON.swift */,
+				88939D9E1B14B6DE00C70CEB /* Views */,
 				88A819CC1AF681B30047DDDD /* EventCell.swift */,
-				88939D911B1398F800C70CEB /* Login.swift */,
-				88939D9A1B13C3CE00C70CEB /* Profile.swift */,
-				881E492E1B017318005E4FC0 /* tickets.swift */,
-				88A819711AF67AB40047DDDD /* Events.swift */,
-				88D073C41AF68DC9009E11A6 /* eventPage.swift */,
-				881E49301B017914005E4FC0 /* ticketPage.swift */,
+				88A818DA1AF66A410047DDDD /* AppDelegate.swift */,
 				88A818E11AF66A410047DDDD /* Main.storyboard */,
 				88A818E41AF66A410047DDDD /* Images.xcassets */,
 				88A818E61AF66A410047DDDD /* LaunchScreen.xib */,

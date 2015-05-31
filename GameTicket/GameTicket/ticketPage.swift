@@ -22,10 +22,10 @@ class ticketPage: UIViewController {
     @IBOutlet weak var navi: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var data =  coms
+        var data = BlockTickets
         
         let image = UITextView();
-        navi.title = data[selectedticket]["ticketName"].string
+        //navi.title = data[selectedticket]["ticketName"]
         
     }
     

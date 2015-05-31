@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-zV-Bmk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Events" id="85Y-ll-rcf"/>
+                                </items>
+                            </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-MF-AAz">
                                 <rect key="frame" x="0.0" y="88" width="600" height="512"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,10 +33,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <visualEffectView key="backgroundView" opaque="NO" contentMode="scaleToFill" id="FRM-YQ-AZV">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="376"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WHT-Zj-o66">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="648"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
                                     <blurEffect style="dark"/>
@@ -75,13 +81,6 @@
                                     <outlet property="delegate" destination="QWk-F8-Rnz" id="zXd-4G-k6C"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" barStyle="black" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-Wk-3ID">
-                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="QWk-F8-Rnz" id="Psz-pg-0rZ"/>
-                                </connections>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kc-PE-xAJ" customClass="FloatingButton" customModule="GameTicket" customModuleProvider="target">
                                 <rect key="frame" x="534" y="542" width="50" height="50"/>
                                 <constraints>
@@ -95,12 +94,13 @@
                                     <action selector="floatingButtonPressed:" destination="QWk-F8-Rnz" eventType="touchUpInside" id="gPR-Yg-ryz"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-zV-Bmk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Events" id="85Y-ll-rcf"/>
-                                </items>
-                            </navigationBar>
+                            <searchBar contentMode="redraw" barStyle="black" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-Wk-3ID">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QWk-F8-Rnz" id="Psz-pg-0rZ"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fY-bx-FQ4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="-1348"/>
+            <point key="canvasLocation" x="-563" y="-1374"/>
         </scene>
         <!--Event Page-->
         <scene sceneID="zKf-jN-iMx">
@@ -247,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFj-HB-NMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="-1348"/>
+            <point key="canvasLocation" x="67" y="-1374"/>
         </scene>
         <!--Ticket Page-->
         <scene sceneID="zKO-bK-KRL">
@@ -290,7 +290,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGZ-f5-tte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="-687"/>
+            <point key="canvasLocation" x="67" y="-724"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="dDk-e0-9s7">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="1Nx-GD-vdH" customClass="Profile" customModule="GameTicket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ns6-3b-KaB"/>
+                        <viewControllerLayoutGuide type="bottom" id="7rI-cL-nDR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ULB-R6-IUR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuC-4h-TDd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wDQ-GF-Dhg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1P-kw-qGl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Profile" id="nLw-RZ-6fA">
+                                        <barButtonItem key="rightBarButtonItem" image="icon-1" id="2Ij-JC-plP">
+                                            <connections>
+                                                <action selector="close:" destination="1Nx-GD-vdH" id="DzG-Nh-a7s"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m1P-kw-qGl" firstAttribute="leading" secondItem="ULB-R6-IUR" secondAttribute="leadingMargin" constant="-16" id="EfB-CF-Ec6"/>
+                            <constraint firstItem="m1P-kw-qGl" firstAttribute="top" secondItem="ULB-R6-IUR" secondAttribute="topMargin" id="X49-tx-OGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zuC-4h-TDd" secondAttribute="trailing" constant="-16" id="fAR-uY-pgw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1P-kw-qGl" secondAttribute="trailing" constant="-16" id="gMv-zO-Q8M"/>
+                            <constraint firstAttribute="centerX" secondItem="zuC-4h-TDd" secondAttribute="centerX" id="tUN-jn-RD5"/>
+                            <constraint firstItem="zuC-4h-TDd" firstAttribute="leading" secondItem="ULB-R6-IUR" secondAttribute="leadingMargin" constant="-16" id="u9h-Hw-ZLt"/>
+                            <constraint firstItem="zuC-4h-TDd" firstAttribute="top" secondItem="ULB-R6-IUR" secondAttribute="topMargin" id="xw5-LG-Dmc"/>
+                            <constraint firstItem="7rI-cL-nDR" firstAttribute="top" secondItem="zuC-4h-TDd" secondAttribute="bottom" id="zIW-tp-8LH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6a-vu-DQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="-78"/>
         </scene>
         <!--Episoder-->
         <scene sceneID="mV9-TE-op7">
@@ -326,7 +381,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <visualEffectView key="backgroundView" opaque="NO" contentMode="scaleToFill" id="vgg-b1-wiN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="376"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZPB-Lb-5KF">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
@@ -374,9 +429,12 @@
                                     <outlet property="delegate" destination="qtg-Aq-vZa" id="q9f-Vg-SOy"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Nyz-oY-CJF">
+                            <searchBar contentMode="redraw" barStyle="black" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nyz-oY-CJF">
                                 <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qtg-Aq-vZa" id="V4m-Cj-eA6"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -398,11 +456,12 @@
                     <navigationItem key="navigationItem" id="4XB-vA-5Pp"/>
                     <connections>
                         <outlet property="collectionView" destination="VuW-6j-tjT" id="siY-Cc-bAX"/>
+                        <outlet property="searchbar" destination="Nyz-oY-CJF" id="75F-JB-5u3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqj-Q4-K7H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="-687"/>
+            <point key="canvasLocation" x="-563" y="-724"/>
         </scene>
         <!--Login-->
         <scene sceneID="xb5-N8-Iw2">
@@ -543,7 +602,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-563" y="-687"/>
+            <point key="canvasLocation" x="-558" y="-78"/>
         </scene>
     </scenes>
     <resources>

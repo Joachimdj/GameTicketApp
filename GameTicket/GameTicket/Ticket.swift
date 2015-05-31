@@ -9,10 +9,15 @@
 import Foundation
 
 struct Ticket {
-    let id : String
+    let id : Int
     let name : String
+    let ticketName : String
+    let blockName : String
+    let access_code : String
+    let startDate : String
+    let endDate : String
+    let block_id : Int
     let image : String
-    let date : String
-    let webpage : String
-    let contact : String
+    let address: String
+    
 }
